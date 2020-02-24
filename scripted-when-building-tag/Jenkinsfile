@@ -1,0 +1,16 @@
+// Building Tags and Tag 
+
+node {
+    stage('Build') {
+            if(env.TAG_NAME != null) {
+	                println("We are building a tag and tag is ${env.TAG_NAME}")
+			        }
+				        else {
+					            println("We are building a branch")
+						            }
+
+							            if(env.TAG_NAME == "release-1.0") {
+								                println("We are building specifically release-1.0 tag")
+										        }
+											    }
+											    }
